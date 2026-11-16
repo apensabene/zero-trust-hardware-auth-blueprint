@@ -107,4 +107,4 @@ All configurations and scripts are sanitized reference templates intended for la
 
 **Anthony Pensabene, CISSP** — Identity Security Engineer & Okta Subject Matter Expert  
 * **GitHub:** [github.com/apensabene](https://github.com/apensabene)
-* **LinkedIn:** linkedin.com/in/apensabene
+* **LinkedIn:** [linkedin.com/in/apensabene](https://linkedin.com/in/apensabene)
