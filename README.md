@@ -11,7 +11,7 @@ Modern Adversary-in-the-Middle (AiTM) reverse-proxy kits bypass legacy MFA (SMS,
 1. **Identity & Session Layer (FIDO2 / WebAuthn):** Enforces origin-bound, device-bound hardware authenticators (deviceBound = REQUIRED, phishingResistant = REQUIRED) via Okta Identity Engine (OIE), blocking cloud-synced passkeys and phishable factors on high-assurance applications.
 2. **Message & Document Layer (S/MIME):** Uses hardware-backed X.509 certificates (emailProtection EKU) for detached CMS/PKCS#7 digital signatures and message encryption.
 
-mermaid
+```mermaid
 sequenceDiagram
     autonumber
     actor User as Enterprise User (Hardware Key)
@@ -33,6 +33,7 @@ sequenceDiagram
     Client->>User: Hardware Private Key Operation (PIN)
     User-->>Client: Detached PKCS#7 Signature
     Client->>PKI: Recipient Verifies Chain & Revocation Status
+```
 
 
 ---
