@@ -1,0 +1,3 @@
+okta_org_name    = "dev-000000"
+okta_base_url    = "oktapreview.com"
+reauth_frequency = "PT2H"

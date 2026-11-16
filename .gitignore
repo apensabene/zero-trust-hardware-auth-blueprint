@@ -1,0 +1,22 @@
+# Environment & Secrets
+.env
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+*.key
+*.jwk
+
+# Terraform
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
