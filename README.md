@@ -39,7 +39,7 @@ sequenceDiagram
 ---
 
 ## Repository Structure
-
+```text
 zero-trust-hardware-auth-blueprint/
 ├── docs/
 │   └── nist-mapping.md                # NIST SP 800-63B, SP 800-53, and Zero Trust mapping
@@ -52,7 +52,7 @@ zero-trust-hardware-auth-blueprint/
 │   ├── verify_smime_cert.sh           # OpenSSL S/MIME EKU, validity & chain checker
 │   └── requirements.txt               # Python dependencies
 └── .gitignore
-
+```
 
 ## Quickstart
 
