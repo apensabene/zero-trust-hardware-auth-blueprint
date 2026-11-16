@@ -57,18 +57,18 @@ zero-trust-hardware-auth-blueprint/
 ## Quickstart
 
 ### 1. Provision Zero-Trust FIDO2 Policy (Terraform)
-bash
+```bash
 cd terraform
 cp terraform.tfvars.example terraform.tfvars
 # Populate okta_org_name in terraform.tfvars and set OKTA_API_TOKEN / OAuth credentials
 terraform init
 terraform plan
+```
 
+### 2. Audit FIDO2 Enrollment Coverage (Python + `private_key_jwt`)
+Authenticates using an Okta API Services OIDC app with an RS256 keypair and least-privilege `okta.users.read` scope (no static `SSWS` tokens):
 
-### 2. Audit FIDO2 Enrollment Coverage (Python + private_key_jwt)
-Authenticates using an Okta API Services OIDC app with an RS256 keypair and least-privilege okta.users.read scope (no static SSWS tokens):
-
-bash
+```bash
 cd scripts
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -78,13 +78,13 @@ export OKTA_CLIENT_ID="0oa..."
 export OKTA_PRIVATE_KEY_FILE="/path/to/private_key.pem"
 
 python audit_fido2_enrollments.py
-
+```
 
 ### 3. Validate S/MIME Certificate Hygiene (OpenSSL)
-bash
+```bash
 chmod +x scripts/verify_smime_cert.sh
 ./scripts/verify_smime_cert.sh path/to/public_smime_cert.pem path/to/ca_chain.pem
-
+```
 
 ---
 
