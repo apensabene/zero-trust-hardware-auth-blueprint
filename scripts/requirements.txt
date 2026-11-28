@@ -1,2 +1,2 @@
 requests>=2.31.0
-pyjwt[crypto]>=2.8.0
+pyjwt[crypto]>=2.14.0
